@@ -17,5 +17,9 @@
 		<appender-ref ref="CONSOLE" />
 		<appender-ref ref="FILE" />
 	</root>
-
+	
+	<!-- Elastic search Logger. Enables query printing. -->
+	<!-- 
+	<logger name="org.springframework.data.elasticsearch.client.WIRE" level="trace"/>
+	-->
 </configuration>

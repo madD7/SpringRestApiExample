@@ -21,17 +21,17 @@ public class RandomCarService implements CarService {
 		 * Hence, used instead of java.util.Random or 
 		 * Math.random() - which creates instance of java.util.Random. 
 		 */
-		var brand = BRANDS.get(ThreadLocalRandom.current().nextInt(0, BRANDS.size()-1));
-		var color = COLORS.get(ThreadLocalRandom.current().nextInt(0, COLORS.size()-1));
-		var type = TYPES.get(ThreadLocalRandom.current().nextInt(0, TYPES.size()-1));
+		var brand = BRANDS.get(ThreadLocalRandom.current().nextInt(0, BRANDS.size()));
+		var color = COLORS.get(ThreadLocalRandom.current().nextInt(0, COLORS.size()));
+		var type = TYPES.get(ThreadLocalRandom.current().nextInt(0, TYPES.size()));
 		
 		var price = ThreadLocalRandom.current().nextInt(10000,Short.MAX_VALUE);
 		
-		int randCount = ThreadLocalRandom.current().nextInt(0, FEATURES.size()-1);
+		int randCount = ThreadLocalRandom.current().nextInt(0, FEATURES.size());
 		
 		List<String> features = new ArrayList<>();
 		for (int i=0; i < randCount; i++) {
-			String tmp = FEATURES.get(ThreadLocalRandom.current().nextInt(0, FEATURES.size()-1));
+			String tmp = FEATURES.get(ThreadLocalRandom.current().nextInt(0, FEATURES.size()));
 			
 			if (features.contains(tmp) == false)
 				features.add(tmp);
@@ -41,7 +41,7 @@ public class RandomCarService implements CarService {
 		
 		String secretFeature = ThreadLocalRandom.current().nextBoolean() == true ? secretFeature = "AutoAIDirve" : null;
 		
-		var fuel = FUELS.get(ThreadLocalRandom.current().nextInt(0, FUELS.size()-1));
+		var fuel = FUELS.get(ThreadLocalRandom.current().nextInt(0, FUELS.size()));
 		int torque = ThreadLocalRandom.current().nextInt(1000,10000);
 		int serialNo = ThreadLocalRandom.current().nextInt(10000,Integer.MAX_VALUE);
 		Engine engine = new Engine(fuel, ThreadLocalRandom.current().nextInt(10,Byte.MAX_VALUE));
@@ -52,7 +52,7 @@ public class RandomCarService implements CarService {
 		
 		List<Tyre> tyres = new ArrayList<>();
 		for (int i=0; i<4; i++) {
-			var manufacturer = TYRE_MANUFACTURERS.get(ThreadLocalRandom.current().nextInt(0, TYRE_MANUFACTURERS.size()-1));
+			var manufacturer = TYRE_MANUFACTURERS.get(ThreadLocalRandom.current().nextInt(0, TYRE_MANUFACTURERS.size()));
 			int size = ThreadLocalRandom.current().nextInt(12,20);
 			int cost = ThreadLocalRandom.current().nextInt(1000,10000);
 			tyres.add(new Tyre(manufacturer, size, cost));
