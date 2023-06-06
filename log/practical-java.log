@@ -1,157 +1,144 @@
-[PracticalJava] [2m10:42:39.961[0;39m [31mERROR[0;39m [2m---[0;39m [36mi.m.elastic.ElasticMeterRegistry        [0;39m [2m:[0;39m failed to send metrics to elastic
+[PracticalJava] [2m12:34:46.975[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 23024 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
+[PracticalJava] [2m12:34:46.980[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[PracticalJava] [2m12:34:47.029[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[PracticalJava] [2m12:34:47.029[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[PracticalJava] [2m12:34:47.848[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m12:34:47.997[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 145 ms. Found 1 Elasticsearch repository interfaces.
+[PracticalJava] [2m12:34:48.002[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m12:34:48.005[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[PracticalJava] [2m12:34:49.800[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
+[PracticalJava] [2m12:34:49.915[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[PracticalJava] [2m12:34:51.494[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[PracticalJava] [2m12:34:51.966[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
+[PracticalJava] [2m12:34:51.992[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 5.567 seconds (JVM running for 7.646)
+[PracticalJava] [2m12:34:53.133[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
+[PracticalJava] [2m12:34:57.141[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
+[PracticalJava] [2m12:36:36.823[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[PracticalJava] [2m12:36:38.123[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 23024 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
+[PracticalJava] [2m12:36:38.123[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[PracticalJava] [2m12:36:39.071[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m12:36:39.110[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 38 ms. Found 1 Elasticsearch repository interfaces.
+[PracticalJava] [2m12:36:39.115[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m12:36:39.122[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[PracticalJava] [2m12:36:39.520[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
+[PracticalJava] [2m12:36:39.580[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[PracticalJava] [2m12:36:40.667[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[PracticalJava] [2m12:36:40.783[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
+[PracticalJava] [2m12:36:40.802[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 2.984 seconds (JVM running for 116.455)
+[PracticalJava] [2m12:36:40.808[0;39m [32m INFO[0;39m [2m---[0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[PracticalJava] [2m12:36:41.072[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
+[PracticalJava] [2m12:36:44.275[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
+[PracticalJava] [2m13:02:00.030[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[PracticalJava] [2m13:02:00.260[0;39m [33m WARN[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m Publishing is already in progress. Skipping duplicate call to publish().
+[PracticalJava] [2m13:02:01.062[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 23024 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
+[PracticalJava] [2m13:02:01.063[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[PracticalJava] [2m13:02:01.685[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m13:02:01.698[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 11 ms. Found 1 Elasticsearch repository interfaces.
+[PracticalJava] [2m13:02:01.699[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m13:02:01.703[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[PracticalJava] [2m13:02:01.896[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
+[PracticalJava] [2m13:02:01.925[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[PracticalJava] [2m13:02:02.423[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[PracticalJava] [2m13:02:02.489[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
+[PracticalJava] [2m13:02:02.498[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 1.511 seconds (JVM running for 1638.151)
+[PracticalJava] [2m13:02:02.500[0;39m [32m INFO[0;39m [2m---[0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[PracticalJava] [2m13:02:02.559[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
+[PracticalJava] [2m13:02:03.735[0;39m [32m INFO[0;39m [2m---[0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[PracticalJava] [2m13:02:03.791[0;39m [31mERROR[0;39m [2m---[0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
 
-java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:825)
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:760)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529)
-	at io.micrometer.core.ipc.http.HttpUrlConnectionSender.send(HttpUrlConnectionSender.java:104)
-	at io.micrometer.core.ipc.http.HttpSender$Request$Builder.send(HttpSender.java:306)
-	at io.micrometer.elastic.ElasticMeterRegistry.publish(ElasticMeterRegistry.java:223)
-	at io.micrometer.core.instrument.push.PushMeterRegistry.publishSafely(PushMeterRegistry.java:59)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'elasticMeterRegistry': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getObject(DefaultListableBeanFactory.java:1990)
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97)
+	at org.springframework.boot.actuate.metrics.data.MetricsRepositoryMethodInvocationListener.lambda$afterInvocation$0(MetricsRepositoryMethodInvocationListener.java:74)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.data.MetricsRepositoryMethodInvocationListener.afterInvocation(MetricsRepositoryMethodInvocationListener.java:71)
+	at org.springframework.data.repository.core.support.RepositoryInvocationMulticaster$DefaultRepositoryInvocationMulticaster.notifyListeners(RepositoryInvocationMulticaster.java:76)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:152)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy5/jdk.proxy5.$Proxy131.saveAll(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy5/jdk.proxy5.$Proxy131.saveAll(Unknown Source)
+	at com.example.practicaljava.common.CarElasticDatasource.populateData(CarElasticDatasource.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:344)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:229)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:166)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.boot.context.event.EventPublishingRunListener.ready(EventPublishingRunListener.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$ready$6(SpringApplicationRunListeners.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.ready(SpringApplicationRunListeners.java:82)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.practicaljava.PracticaljavaApplication.main(PracticaljavaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
 
-[PracticalJava] [2m20:02:26.266[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 1924 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:02:26.267[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:02:26.307[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[PracticalJava] [2m20:02:26.307[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[PracticalJava] [2m20:02:27.156[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:02:27.283[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 122 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:02:27.287[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:02:27.290[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:02:28.516[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:02:28.576[0;39m [33m WARN[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m Unable to start LiveReload server
-[PracticalJava] [2m20:02:29.410[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m20:02:29.736[0;39m [33m WARN[0;39m [2m---[0;39m [36monfigReactiveWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8001 is already in use
-[PracticalJava] [2m20:02:31.000[0;39m [32m INFO[0;39m [2m---[0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[PracticalJava] [2m20:02:31.017[0;39m [31mERROR[0;39m [2m---[0;39m [36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8001 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
-
-[PracticalJava] [2m20:25:15.203[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 23544 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:25:15.205[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:25:15.244[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[PracticalJava] [2m20:25:15.244[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[PracticalJava] [2m20:25:15.907[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:25:16.033[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 121 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:25:16.037[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:25:16.042[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:25:17.030[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:25:17.097[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m20:25:17.995[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m20:25:18.309[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
-[PracticalJava] [2m20:25:18.324[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 3.529 seconds (JVM running for 4.799)
-[PracticalJava] [2m20:25:18.598[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
-[PracticalJava] [2m20:25:22.452[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
-[PracticalJava] [2m20:25:24.225[0;39m [32m INFO[0;39m [2m---[0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[PracticalJava] [2m20:46:53.299[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 24312 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:46:53.300[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:46:53.354[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[PracticalJava] [2m20:46:53.354[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[PracticalJava] [2m20:46:54.163[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:46:54.301[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 133 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:46:54.309[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:46:54.314[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:46:55.874[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:46:55.970[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m20:46:57.162[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m20:46:57.614[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
-[PracticalJava] [2m20:46:57.632[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 4.966 seconds (JVM running for 6.411)
-[PracticalJava] [2m20:46:58.017[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
-[PracticalJava] [2m20:47:03.384[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
-[PracticalJava] [2m20:50:21.527[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-[PracticalJava] [2m20:50:22.971[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 24312 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:50:22.971[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:50:23.678[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:50:23.702[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 21 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:50:23.705[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:50:23.709[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:50:23.955[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:50:23.988[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m20:50:25.040[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m20:50:25.204[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
-[PracticalJava] [2m20:50:25.222[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 2.374 seconds (JVM running for 214.0)
-[PracticalJava] [2m20:50:25.228[0;39m [32m INFO[0;39m [2m---[0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[PracticalJava] [2m20:50:25.330[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
-[PracticalJava] [2m20:50:27.630[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
-[PracticalJava] [2m20:51:02.920[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-[PracticalJava] [2m20:51:04.639[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 24312 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:51:04.639[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:51:05.318[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:51:05.332[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 12 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:51:05.333[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:51:05.336[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:51:05.472[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:51:05.489[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m20:51:06.050[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m20:51:06.124[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
-[PracticalJava] [2m20:51:06.134[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 1.596 seconds (JVM running for 254.913)
-[PracticalJava] [2m20:51:06.136[0;39m [32m INFO[0;39m [2m---[0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[PracticalJava] [2m20:51:06.226[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
-[PracticalJava] [2m20:51:08.023[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
-[PracticalJava] [2m20:51:36.058[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-[PracticalJava] [2m20:51:37.205[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 24312 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:51:37.205[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:51:37.894[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:51:37.908[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 13 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:51:37.911[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:51:37.914[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:51:38.070[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:51:38.100[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m20:51:38.751[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m20:51:38.855[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
-[PracticalJava] [2m20:51:38.866[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 1.907 seconds (JVM running for 287.645)
-[PracticalJava] [2m20:51:38.868[0;39m [32m INFO[0;39m [2m---[0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[PracticalJava] [2m20:51:39.064[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
-[PracticalJava] [2m20:51:42.559[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
-[PracticalJava] [2m20:53:20.511[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-[PracticalJava] [2m20:53:21.768[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 24312 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m20:53:21.769[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m20:53:22.534[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:53:22.551[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 14 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m20:53:22.551[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m20:53:22.555[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m20:53:22.727[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m20:53:22.748[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m21:01:41.076[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 25248 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
-[PracticalJava] [2m21:01:41.078[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[PracticalJava] [2m21:01:41.130[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[PracticalJava] [2m21:01:41.132[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[PracticalJava] [2m21:01:41.987[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m21:01:42.152[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 158 ms. Found 1 Elasticsearch repository interfaces.
-[PracticalJava] [2m21:01:42.157[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-[PracticalJava] [2m21:01:42.160[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
-[PracticalJava] [2m21:01:43.658[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
-[PracticalJava] [2m21:01:43.730[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[PracticalJava] [2m21:01:44.932[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-[PracticalJava] [2m21:01:45.319[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
-[PracticalJava] [2m21:01:45.338[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 5.084 seconds (JVM running for 6.821)
-[PracticalJava] [2m21:01:45.784[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
-[PracticalJava] [2m21:01:49.681[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
-[PracticalJava] [2m21:13:15.529[0;39m [32m INFO[0;39m [2m---[0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[PracticalJava] [2m13:03:38.370[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 19044 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
+[PracticalJava] [2m13:03:38.372[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[PracticalJava] [2m13:03:38.416[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[PracticalJava] [2m13:03:38.416[0;39m [32m INFO[0;39m [2m---[0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[PracticalJava] [2m13:03:39.093[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m13:03:39.230[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 132 ms. Found 1 Elasticsearch repository interfaces.
+[PracticalJava] [2m13:03:39.239[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m13:03:39.242[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[PracticalJava] [2m13:03:40.292[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
+[PracticalJava] [2m13:03:40.352[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[PracticalJava] [2m13:03:41.257[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[PracticalJava] [2m13:03:41.596[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
+[PracticalJava] [2m13:03:41.615[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 3.673 seconds (JVM running for 4.841)
+[PracticalJava] [2m13:03:41.915[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
+[PracticalJava] [2m13:03:44.626[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
+[PracticalJava] [2m13:04:59.994[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[PracticalJava] [2m13:05:01.133[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Starting PracticaljavaApplication using Java 17.0.4.1 on DESKTOP-PBVI1F4 with PID 19044 (D:\workspaceSpringREST\practicaljava\bin\main started by User in D:\workspaceSpringREST\practicaljava)
+[PracticalJava] [2m13:05:01.135[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[PracticalJava] [2m13:05:01.759[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m13:05:01.784[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 24 ms. Found 1 Elasticsearch repository interfaces.
+[PracticalJava] [2m13:05:01.786[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[PracticalJava] [2m13:05:01.792[0;39m [32m INFO[0;39m [2m---[0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[PracticalJava] [2m13:05:02.081[0;39m [32m INFO[0;39m [2m---[0;39m [36mi.m.c.instrument.push.PushMeterRegistry [0;39m [2m:[0;39m publishing metrics for ElasticMeterRegistry every 1m
+[PracticalJava] [2m13:05:02.111[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[PracticalJava] [2m13:05:02.778[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[PracticalJava] [2m13:05:02.909[0;39m [32m INFO[0;39m [2m---[0;39m [36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8001
+[PracticalJava] [2m13:05:02.927[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.PracticaljavaApplication          [0;39m [2m:[0;39m Started PracticaljavaApplication in 1.98 seconds (JVM running for 86.153)
+[PracticalJava] [2m13:05:02.935[0;39m [32m INFO[0;39m [2m---[0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[PracticalJava] [2m13:05:03.460[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m End delete with response() {"acknowledged":true}
+[PracticalJava] [2m13:05:06.943[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.e.p.common.CarElasticDatasource       [0;39m [2m:[0;39m Saved 10000 cars.
+[PracticalJava] [2m13:05:29.453[0;39m [32m INFO[0;39m [2m---[0;39m [36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)

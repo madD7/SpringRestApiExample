@@ -1,11 +1,12 @@
 package com.example.practicaljava.api.server;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.practicaljava.api.response.ErrorResponse;
 import com.example.practicaljava.entity.Car;
 import com.example.practicaljava.repository.CarElasticRepository;
 import com.example.practicaljava.services.CarService;
@@ -108,11 +113,30 @@ public class CarApi {
 		return carRepo.findByBrandAndColor(car.getBrand(), car.getColor());
 	}
 	
-	// "/FindCars" is static Path.
-	// {brand} & {color} are variables. - Each variable is seperated by "/" and enclosed in {}.
+	/* "/FindCars" is static Path.
+	* {brand} & {color} are variables. - Each variable is seperated by "/" and enclosed in {}.
+	* The datatype verfication is required. if datatype is not string, then a error must be sent to server.
+	* For that the return type is changed from List<Car> to ResponseEntity. */
 	@GetMapping(value="/findCars/{brand}/{color}")
-	public List<Car> findCarByPath(@PathVariable String brand, @PathVariable String color){
-		return carRepo.findByBrandAndColor(brand, color);
+	public ResponseEntity<Object> findCarByPath(@PathVariable String brand, @PathVariable String color){
+		
+		var headers = new HttpHeaders();
+		headers.add(HttpHeaders.SERVER, "Spring Server Header");
+		headers.add("CustomHeader", "Custom Response Header");
+		
+		if ( StringUtils.isNumeric(brand) ) {
+			var errResponse = new ErrorResponse("Invalid brand input: " + brand, LocalDateTime.now());
+			return new ResponseEntity<Object>(errResponse, headers, HttpStatus.BAD_REQUEST);
+		}
+		
+		if ( StringUtils.isNumeric(color) ) {
+			var errResponse = new ErrorResponse("Invalid color input: " + color, LocalDateTime.now());
+			return new ResponseEntity<Object>(errResponse, headers, HttpStatus.BAD_REQUEST);
+		}
+		
+		var cars = carRepo.findByBrandAndColor(brand, color);
+		
+		return ResponseEntity.ok().headers(headers).body(cars);
 	}
 	
 	// Optional Path parameter example
