@@ -19,6 +19,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -119,7 +120,6 @@ public class CarApi {
 	* For that the return type is changed from List<Car> to ResponseEntity. */
 	@GetMapping(value="/findCars/{brand}/{color}")
 	public ResponseEntity<Object> findCarByPath(@PathVariable String brand, @PathVariable String color){
-		
 		var headers = new HttpHeaders();
 		headers.add(HttpHeaders.SERVER, "Spring Server Header");
 		headers.add("CustomHeader", "Custom Response Header");
@@ -179,7 +179,30 @@ public class CarApi {
 	// Name of query parameter must match the parameter name in Java getter/setter method. 
 	@GetMapping(value="/findCars")
 	public List<Car> findCarByParam(@RequestParam String brand, @RequestParam String color){
+		
+		if (StringUtils.isNumeric(color)) {
+			// We can also create custom exception.
+			throw new IllegalArgumentException("Invalid color: " + color);
+		}
+		
+		if (StringUtils.isNumeric(brand)) {
+			
+		}
+		
 		return carRepo.findByBrandAndColor(brand, color);
 	}
 	
+	/* Method to handle Invalid Color Exception. 
+	 * This method will send response with error message. */
+	@ExceptionHandler(value = IllegalArgumentException.class)
+	private ResponseEntity<ErrorResponse> handleInvalidColorException(IllegalArgumentException e) {
+		LOG.warn(e.getMessage());
+		var errResponse = new ErrorResponse(e.getMessage(), LocalDateTime.now());
+		
+		// This is ResponseEntity Constructor way
+		return new ResponseEntity<ErrorResponse>(errResponse, null, HttpStatus.BAD_REQUEST);
+		
+		// Below is ResponseEntity builder-MethodChaining way 
+		// return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errResponse);   		// is also valid.
+	}
 }
