@@ -13,3 +13,19 @@ spring:
     
 server:
   port: 8001
+
+management:
+  metrics:
+    export:
+      elastic:
+        step: 30s
+        host: http://localhost:9200
+
+# Hide "Try it out" button on Spring Doc for sharing documentation.
+# "Try it out" button only enabled for "get" APIs.
+springdoc:
+  swagger-ui:
+    supported-submit-methods:
+    - get
+    
+ 

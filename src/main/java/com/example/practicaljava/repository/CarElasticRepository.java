@@ -35,7 +35,7 @@ public interface CarElasticRepository extends ElasticsearchRepository<Car, Strin
 	
 	public List<Car> findByIsAvailable(boolean isAvailable);
 	
-	//public List<Car> findByColorOrType(String color, String type);
+	// public List<Car> findByColorOrType(String color, String type);
 	
 	public Page<Car> findByColor(String color, Pageable pagable);
 	

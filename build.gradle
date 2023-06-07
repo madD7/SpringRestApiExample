@@ -27,10 +27,10 @@ ext {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	implementation('org.springframework.boot:spring-boot-starter-actuator')
+	implementation('org.springframework.boot:spring-boot-starter-actuator')	  // For Kibana 
 	implementation "org.apache.commons:commons-lang3:${apacheCommonsLang3Version}"
-	implementation "org.springdoc:springdoc-openapi-webflux-ui:${springdocVersion}"
-	implementation "io.micrometer:micrometer-registry-elastic:${micrometerRegistryVersion}"
+	implementation "org.springdoc:springdoc-openapi-webflux-ui:${springdocVersion}"		// For documentation
+	implementation "io.micrometer:micrometer-registry-elastic:${micrometerRegistryVersion}"	// For kibana
 	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
 	
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

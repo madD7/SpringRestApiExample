@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.apache.commons.lang3.StringUtils;
@@ -35,8 +36,16 @@ import com.example.practicaljava.exception.IllegalApiParamException;
 import com.example.practicaljava.repository.CarElasticRepository;
 import com.example.practicaljava.services.CarService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping(value="/api/v1/car")
+@Tag(name = "Car REST API",
+		description = "Car REST APIs for demonstrating CRUD operations on Cars with different Brand, Color, Fuel Types having different Features. ")
 public class CarApi {
 	private static final Logger LOG = LoggerFactory.getLogger(CarApi.class);
 	
@@ -141,23 +150,34 @@ public class CarApi {
 	}
 	
 	// Optional Path parameter example
-	/*@GetMapping(path={"/findCars/{color}/{type}", "/findCars/{color}"})
+	/*
+	@GetMapping(path={"/findCars/{color}/{type}", "/findCars/{color}"})
 	public List<Car> findCarByOptionalType(@PathVariable String color,
 									@PathVariable(name="type", required=false) Optional<String> type){
 		List<Car> cars = null;
 		
 		if ( type.isPresent() == true )
 			cars = carRepo.findByColorOrType(color, type.get());
-		else
-			cars = carRepo.findByColor(color);
+		else {
+			Pageable pageable = PageRequest.of(0, 10);
+			cars = carRepo.findByColor(color, pageable).getContent();
+		}
 		
 		return cars;
-	}*/
+	}
+	*/
 	
+	// @ApiResponses - documentation for list of responses.
+	@Operation(summary="Search for Cars on basis of Color.",
+			description="Give input color. Eg: /api/v1/car/findCars/color?color=\"White\".")
+	@ApiResponses({
+		@ApiResponse(responseCode="200", description="Query executed successfully."),
+		@ApiResponse(responseCode="400", description="Invalid input parameter.")
+	})
 	@GetMapping(path="/findCars/color")
-	public List<Car> findCarByColor(@RequestParam String color, 
-									@RequestParam(defaultValue = "0") int page,
-									@RequestParam(defaultValue = "10") int pgSize){
+	public List<Car> findCarByColor(@Parameter(description="Color of Car.", example="Blue") @RequestParam String color, 
+									@Parameter(description="Page number (for Pagenation).")@RequestParam(defaultValue = "0") int page,
+									@Parameter(description="Cars to be displayed per page.")@RequestParam(defaultValue = "10") int pgSize){
 		// Sort parameter is optional.
 		Pageable pageable = PageRequest.of(page, pgSize, Sort.by(Direction.DESC, "price"));
 		return carRepo.findByColor(color, pageable).getContent();

@@ -8,12 +8,23 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping(value="/api")
+// Tag annotation to build API Documentation.
+@Tag(name = "Default REST API",
+		description = "Default REST API for demonstrating REST API examples. ")
 public class DefaultRestApi {
 
 	/* Using @RequestMapping means any action can be used, viz. Get, Post, Put, etc */
 	
+	
+	// @Operation annotation for documenting method.
+	// @Parameter can be used to document arguments.
+	@Operation(summary="HelloWorld",
+				description="First REST API example.")
 	@GetMapping(value="/HelloWorld")	// or - @RequestMapping(value="/api/welcome")
 	public String welcome() {
 		return "Hello World!";
