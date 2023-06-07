@@ -195,6 +195,9 @@ public class CarApi {
 	
 	/* Method to handle Invalid Color Exception. 
 	 * This method will send response with error message. */
+	/* Methods marked with @ExceptionHandler will only handle the 
+	 * exceptions thrown within its own class.
+	 * */
 	@ExceptionHandler(value = IllegalArgumentException.class)
 	private ResponseEntity<ErrorResponse> handleInvalidColorException(IllegalArgumentException e) {
 		LOG.warn(e.getMessage());
@@ -207,7 +210,8 @@ public class CarApi {
 		// return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errResponse);   		// is also valid.
 	}
 	
-	
+	/** Moved to GlobalExceptionHandler class */
+	/** 
 	@ExceptionHandler(value = IllegalApiParamException.class)
 	private ResponseEntity<ErrorResponse> handleIllegalApiParamException(IllegalApiParamException e) {
 		LOG.warn(e.getMessage());
@@ -218,5 +222,5 @@ public class CarApi {
 		
 		// Below is ResponseEntity builder-MethodChaining way 
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errResponse);   		// is also valid.
-	}
+	}*/
 }
