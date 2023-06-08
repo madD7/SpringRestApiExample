@@ -150,8 +150,8 @@ public class CarApi {
 	}
 	
 	// Optional Path parameter example
-	/*
-	@GetMapping(path={"/findCars/{color}/{type}", "/findCars/{color}"})
+	// Two Urls with same datatype but different parameters will result to compilation errors.
+	@GetMapping(path={"/findCars/optional/{color}/{type}", "/findCars/optional/{color}"})
 	public List<Car> findCarByOptionalType(@PathVariable String color,
 									@PathVariable(name="type", required=false) Optional<String> type){
 		List<Car> cars = null;
@@ -165,7 +165,7 @@ public class CarApi {
 		
 		return cars;
 	}
-	*/
+
 	
 	// @ApiResponses - documentation for list of responses.
 	@Operation(summary="Search for Cars on basis of Color.",
